@@ -13,7 +13,7 @@ function deepestChild() {
     node = nextNode;
     nextNode = node.children[0];
   }
-  return node.children[0].innerHTML;
+  return node.innerHTML;
 }
 
 function increaseRankBy(n) {
