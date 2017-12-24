@@ -9,11 +9,11 @@ function nestedTarget() {
 function deepestChild() {
   let node = document.getElementById('grand-node');
   let nextNode = node.children[0];
-  while(nextNode) {
+  while(node) {
     node = nextNode;
     nextNode = node.children[0];
   }
-  return node;
+  return node.children[0];
 }
 
 function increaseRankBy(n) {
